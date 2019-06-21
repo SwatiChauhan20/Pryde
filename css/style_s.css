@@ -1,0 +1,635 @@
+/*Doctor consultation Page css*/
+/*specialities section*/
+.specialities{
+	background-image: url(../images/pediatrics-top1.jpg);
+	background-repeat: no-repeat;
+	padding: 40px 0px;
+	position: relative;
+	border-bottom: 1px solid #dddddd;
+	background-attachment: fixed;
+}
+.specialities:before{
+	content: "";
+	background-color: rgba(255,255,255,0.90);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.specialities_blue{
+	background-image: url(../images/pediatrics-top1.jpg);
+	background-repeat: no-repeat;
+	padding: 40px 0px;
+	position: relative;
+	border-bottom: 1px solid #dddddd;
+	background-attachment: fixed;
+}
+.specialities_blue:before{
+	content: "";
+	background-color: rgba(20, 42, 66, 0.85);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.section_title h2{
+	font-size: 26px;
+	font-weight: 400;
+	display: inline-block;
+	line-height: 34px;
+	position: relative;
+}
+.section_title h2 img{
+	margin-left: 15px;
+}
+.specialities_toggle_btn{
+	display: inline-block;
+	float: right;
+	position: relative;
+}
+.specialities_toggle_btn a{
+	color: #299fd9 !important;
+	border: 1px solid #299fd9;
+	padding: 4px 12px;
+}
+a.speciality_menu_links {
+	height: 150px;
+	border: 1px solid #a0a0a0;
+	color: white;
+	margin-top: 30px;
+	padding: 15px;
+	position: relative;
+	background-color: #fff;
+}
+.speciality_menu_links p {
+	text-align: center;
+	width: 100%;
+	color:#363636;
+}
+.speciality_menu_links img {
+	margin: 10px auto;
+	filter: grayscale(100%) brightness(105%);
+}
+a.speciality_menu_links:hover{
+	border-color: #008cd2;
+}
+a.speciality_menu_links:hover p{
+	color: #008cd2;
+}
+a.speciality_menu_links:hover img{
+	filter: none;
+}
+/*see how it work section-2*/
+.see_how_it_work{
+	padding: 40px 0px; 
+}
+.see_how_it_work p {
+	margin-top: 20px;
+	line-height: 33px;
+}
+
+/*Doctor consultation doctor list page css start*/
+.doctor_blue{
+	color: #0c4e93;
+}
+.dermatology hr{
+	margin:40px 0px;
+}
+.dermatology_doctor_detail {
+	margin-top: 25px;
+}
+.dermatology{
+	padding: 40px 0px;
+}
+.dermatology_info{
+	height: 150px;
+	border: 1px solid #dddddd;
+	color: white;
+	margin-top: 30px;
+	padding: 15px;
+	position: relative;
+}
+.dermatology_info img {
+	margin: 10px auto;
+}
+.dermatology_info p {
+	text-align: center;
+	width: 100%;
+	color: black;
+	font-weight: 400;
+}
+.doctor_image{
+	width: 100%;
+	height: 360px;
+	overflow: hidden;
+}
+.doctor_image img{
+	max-width: 100%;
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+}
+.doctor_name{
+	line-height: 33px;
+	margin-bottom: 20px;
+}
+.doctor_name h4{
+	font-weight: 700;
+	border-left: 2px solid #0c4e93;
+	padding: 0px 20px
+}
+.doctor_name p{
+	padding: 0px 24px;
+}
+.doctor_overview{
+	line-height: 33px;
+}
+.doctor_overview h6{
+	color: #222222;
+	font-size: 20px;
+}
+.doctor_overview p{
+	color: #757575;
+}
+.doctor_details button {
+	border: 2px solid #0c4e93;
+	color: #0c4e93;
+	padding: 10px 40px;
+	font-weight: 700;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+.doctor_consult{
+	padding: 20px 35px;
+}
+.doctor_consult strike{
+	font-size: 24px;
+}
+.blue_price{
+	color: #008cd2;
+	font-size: 30px;
+}
+.gray_save{
+	color: #757575;
+	font-size: 16px;
+}
+
+/*My appointment page css start*/
+th.fc-day-header.fc-widget-header {
+	padding: 15px;
+	background-color: #0c4e93!important;
+	color: white!important;
+	text-align: left!important;
+	text-transform: uppercase;
+}
+.fc-right button.fc-today-button {
+	display: none!important;
+}
+td.fc-day-number {
+	height: 120px;
+}
+td{
+	border-color: #e5eaf0 !important
+}
+.fc-ltr .fc-basic-view .fc-day-number {
+	padding: 7px;
+}
+#calendar{
+	margin: 60px 0px;
+}
+button.fc-button {
+	outline: none!important;
+}
+.fc-button-group, .fc button{
+	display: inline-block!important;
+}
+td.fc-day-number.fc-today.fc-state-highlight {
+	background-color: rgba(186, 217, 250, 0.38)!important;
+}
+.fc tbody .fc-row .fc-content-skeleton tbody tr:last-child td {
+	padding-bottom: 0!important; 
+}
+.fc-state-default {
+	border: none!important;
+	background-color: white!important;
+	background-image: none!important;
+	box-shadow: none!important;
+}
+a.fc-day-grid-event.fc-event {
+	border: none!important;
+	font-weight: 700;
+}
+/*search clinic page css start*/
+.search_clinic{
+	padding: 30px 0px;
+}
+select {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px;
+}
+input.form-group {
+	padding: 9px;
+	width: 100%;
+	margin-top: 10px;
+}
+button.btn.search_btn {
+	border-radius: 0px;
+	color: #fff;
+	background-color: #008cd2;
+	outline: none;
+	padding: 10px;
+	width: 100%;
+	margin-top: 33px;
+}
+.google_map iframe{
+	width: 100%;
+	height: 600px;
+}
+/*secondOpinion page css start*/
+.meet_our_doctor{
+	padding: 30px 0px;
+	border-bottom: 1px solid #dddddd;
+}
+.meet_our_doctor h2{
+	padding: 0px 37px;
+}
+.search_second_opinion p{
+	line-height: 33px;
+}
+.font_bold{
+	font-weight: 700!important;
+	margin: 10px 0px;
+}
+.doctor_slider{
+	padding: 30px;
+}
+.s_doctor_image{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.s_doctor_image img{
+	max-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+.doctor_single_slide{
+	margin: 20px ;
+}
+.doctor_single_slide p{
+	line-height: 30px;
+	text-align: center;
+	margin: 10px 45px;
+}
+.medical_records{
+	padding: 40px 0px;
+}
+.medical_records p{
+	line-height: 33px;
+	margin-top: 15px;
+}
+.doctor_slider button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: table;
+	height: 53px;
+	z-index: 11;
+	background-color: #008cd2;
+	color: black;
+	border-radius: 0px!important;
+	font-size: 27px;
+}
+.doctor_slider button.slick-prev{
+	left: 0px;
+}
+.doctor_slider button.slick-next{
+	right: 0px;
+}
+
+/*follow up consultation page css start*/
+.text_upper{
+	text-transform: uppercase;
+}
+.therapy_care{
+	background-color: #fff;
+	border-top: 2px solid #008cd2;
+	height: auto;
+	margin-top: 15px;
+	padding: 40px;
+	width: 100%;
+	box-shadow: 0px 0px 7px lightgrey;
+}
+.therapy_care img{
+	margin: 10px auto;
+}
+.therapy_care p {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.therapy_care strike {
+	font-size: 24px;
+}
+.mt_2{
+	margin-top: 15px;
+}
+.mr_2{
+	margin-right:  10px;
+}
+.px_2{
+	padding: 10px 62px;
+}
+/*family doctor page css start*/
+.family_doctor{
+	padding: 40px 0px;
+}
+a.tab_link {
+    padding: 50px 4px;
+    border: 1px solid;
+    width: 100%;
+    height: 173px;
+    text-align: center;
+    filter: grayscale(100%);
+}
+a.tab_link.active {
+	color: #1c5a9a;
+    filter: none;
+}
+.form-check {
+    padding: 0!important;
+}
+input[type=checkbox], input[type=radio]{
+	display: none;
+}
+.form-check-label{
+	font-size: 18px;
+}
+input[type=radio]:checked + label{
+	background-color: #0c4e93;
+	color: white;
+	padding: 10px 22px;
+	cursor: pointer;
+	outline: none;
+}
+input[type=radio] + label{
+	background :transparent;
+	color: #636363;
+	padding: 10px 22px;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #d6d6d6;
+}
+.radio_form{
+	padding:15px; 
+}
+.tab-pane p{
+	line-height: 20px;
+	margin-top: 10px;
+}
+.family_doctor_des{
+	padding: 20px 0px;
+	margin-top: 10px;
+}
+
+/*Physiotherapy detail list page css start*/
+.details_des_section {
+    padding: 0px 0px 40px;
+}
+.details_des_section ul{
+	padding: 0px 18px;
+}
+.details_des_section li{
+	list-style-type:  circle;
+}
+.fs{
+	font-size: 25px;
+}
+.details span{
+	line-height: 33px;
+}
+.details a.tab_link {
+	padding: 38px 0px!important;
+    height: 148px!important;
+} 
+.border-bottom{
+	border-right: 1px solid #dddddd;
+}
+.text_center{
+	margin: 0px auto;
+}
+
+/*Physiotherapy detail page css start*/
+.pain_management p{
+	line-height: 33px;
+}
+.navy_blue_font{
+	color: #0c4e93;
+}
+.blue_font{
+		color: #008cd2;
+}
+p.pain_management_list{
+height: 150px;
+	border: 1px solid #a0a0a0;
+	color: white;
+	margin-top: 30px;
+	padding: 15px;
+	position: relative;
+	background-color: #fff;
+}
+.pain_mangement_main {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 40px;
+    margin-bottom: 34px;
+}
+.pain_mangement_right{
+	border-left: 1px solid #dddddd;
+	padding-left: 20px;
+}
+.pain_mangement_btn button {
+    border: 2px solid #0c4e93;
+    color: #0c4e93;
+    padding: 10px 29px;
+    font-weight: 700;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+/*medicine supply*/
+.medicine_middle_class{
+	padding: 40px 0px;
+}
+.medicine_content{
+	margin-top: 20px;
+	line-height: 33px;
+}
+.medicine_gray_font{
+	color: #757575;
+}
+/*medical supply list page css start*/
+.baby_care_title{
+	padding: 40px;
+}
+.baby_care_border {
+    border-bottom: 1px solid #dddddd;
+    padding: 9px 0px 36px;
+}
+.baby_care{
+	background-color: #fff;
+	border-top: 2px solid #008cd2;
+	height: 380px;
+	margin-top: 15px;
+	padding: 40px 20px;
+	width: 100%;
+	box-shadow: 0px 0px 7px lightgrey;
+}
+.baby_care img{
+	margin: 10px auto;
+}
+.baby_care p {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+/*physiotherapy page css start*/
+.physiotherapy_tab{
+	padding: 40px 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000000!important;
+    border-bottom: 4px solid #0c4e93!important;
+}
+.nav-tabs .nav-link {
+     border: none!important;
+     text-transform: uppercase;
+     color: #999999!important;
+}
+.physiotherapy_tab ul {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.physiotherapy_tab ul li{
+	display: inline-block;
+}
+/*nursing page css start*/
+.nursing_main{
+	padding: 40px 0px;
+	border-bottom: 1px solid #dddddd;
+}
+.features_nursing{
+	padding: 40px 0px;
+}
+.feature_detail_card{
+	text-align: center;
+	border: 1px solid #dddddd;
+	padding: 40px;
+	margin: 11px 0px;
+	width: 100%;
+}
+.feature_detail_card_blue{
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 20px 0px;
+	width: 100%;
+}
+.blue_image img{
+	filter: brightness(1.9);
+}
+.feature_detail_card_blue hr{
+	border: 2px solid;
+	border-color: #0c4e93;
+	width: 40%;
+	margin: 20px auto;
+}
+/*doctor login page css start*/
+.doctor_login_box {
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 100px auto;
+    width: 100%;
+    max-width: 500px;
+    display: table;
+}
+.doctor_login_box button {
+    width: 100%;
+    margin: 22px 0px 0px;
+    border: none;
+    padding: 8px 0px;
+    color: #fff;
+    background-color: #008cd2;
+    font-weight: 600;
+}
+.doctor_login_box h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.doctor_login_box p{
+	margin: 10px 0px;
+	font-weight: 300;
+}
+/*register patient page css*/
+.btn-group{
+    width: 100%;
+}
+.btn-group button{
+	border: 1px solid #dddddd;
+}
+.register_box {
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 100px auto;
+    width: 100%;
+    max-width: 900px;
+    display: table;
+}
+.register_box button {
+    margin: 15px 0px 0px;
+    border: none;
+    padding: 7px 47px;
+    color: #fff;
+    background-color: #008cd2;
+    font-weight: 600;
+}
+.register_box h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.register_box label{
+	margin: 10px 0px;
+	font-weight: 300;
+}
+.btn-light:not(:disabled):not(.disabled).active{
+	color: #fff!important;
+	background-color: #0c4e93!important;
+	border-color: transparent!important;
+	border-radius: 0px!important; 
+}
+.register_box .btn{
+	border-radius: 0px!important;
+	border: 1px solid #dddddd;
+}
+.input-group-text {
+     background-color: transparent!important; 
+     border-radius: 0px!important; 
+}
+@media (max-width: 991px){
+	.doctor_image{
+		margin-bottom: 30px;
+	}
+	.doctor_single_slide p {
+		line-height: 30px;
+		text-align: center;
+		margin: 10px 18px;
+	}
+}
