@@ -19,7 +19,7 @@ header {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1450px;
+    max-width: 1550px;
 }
 .header_top {
     display: table;
@@ -232,10 +232,13 @@ footer ul li a:hover{
 	display: block;
 	margin-top: 15px;
 }
-.footer_contact_info span img{
+.footer_top span img{
 	margin-right: 10px;
 }
-.footer_contact_info span, .footer_contact_info span a{
+.footer_top span, .footer_top span a{
+	color: #fff;
+}
+.footer_top a:hover{
 	color: #fff;
 }
 .footer_top ul li {
@@ -288,3 +291,9 @@ ul.copyright_text li:last-child:after{
 	display: none;
 }
 /*footer section css end*/
+
+@media(max-width: 767px){
+	.footer_right {
+		width: 100%;
+	}
+}

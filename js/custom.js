@@ -3,34 +3,34 @@ $(document).ready(function(){
   $(".specialities_toggle_btn").click(function(){
     $(".specialities_toggle_menu").slideToggle();
   });
+  $(".search_icon_box a").click(function(){
+  	$(".search_content").toggleClass("open_search");
+  });
 });
 // My Appointment calendar js
- $(document).ready(function() {
- 	$('#calendar').fullCalendar({
- 		editable: true,
- 		eventLimit: true,
- 		updateEvent: true, 
- 		addEvent:true,
- 		events: [
- 		{
- 			title  : '3:00PM - 4:00PM',
- 			start  : '2019-06-01'
- 		},
- 		{
- 			title  : '3:00PM - 4:00PM',
- 			start  : '2010-01-05',
+ // $(document).ready(function() {
+ // 	$('#calendar').fullCalendar({
+ // 		editable: true,
+ // 		eventLimit: true,
+ // 		updateEvent: true, 
+ // 		addEvent:true,
+ // 		events: [
+ // 		{
+ // 			title  : '3:00PM - 4:00PM',
+ // 			start  : '2019-06-01'
+ // 		},
+ // 		{
+ // 			title  : '3:00PM - 4:00PM',
+ // 			start  : '2010-01-05',
 
- 		},
- 		{
- 			title  : '3:00PM - 4:00PM',
- 			start  : '2019-06-15',
- 		}
- 		]
- 	});
- });
-
-// search clinic page js start
-
+ // 		},
+ // 		{
+ // 			title  : '3:00PM - 4:00PM',
+ // 			start  : '2019-06-15',
+ // 		}
+ // 		]
+ // 	});
+ // });
 
 // second opinion page js
 
@@ -73,3 +73,11 @@ $(document).ready(function(){
 		]
 	});
 });
+
+// appoinment booking based on doctor
+
+// $(document).ready(function() {
+//  	$('#calendar1').fullCalendar({
+
+//  	});
+//  });
