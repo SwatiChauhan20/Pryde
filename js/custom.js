@@ -8,29 +8,30 @@ $(document).ready(function(){
   });
 });
 // My Appointment calendar js
- // $(document).ready(function() {
- // 	$('#calendar').fullCalendar({
- // 		editable: true,
- // 		eventLimit: true,
- // 		updateEvent: true, 
- // 		addEvent:true,
- // 		events: [
- // 		{
- // 			title  : '3:00PM - 4:00PM',
- // 			start  : '2019-06-01'
- // 		},
- // 		{
- // 			title  : '3:00PM - 4:00PM',
- // 			start  : '2010-01-05',
+ $(document).ready(function() {
+ 	$('#calendar').fullCalendar({
+ 		editable: true,
+ 		eventLimit: true,
+ 		updateEvent: true, 
+ 		addEvent:true,
+ 		events: [
+ 		{
+ 			title  : 'doctor',
+ 			time :'3:00PM - 4:00PM',
+ 			start  : '2019-06-01'
+ 		},
+ 		{
+ 			title  : '3:00PM - 4:00PM',
+ 			start  : '2010-01-05',
 
- // 		},
- // 		{
- // 			title  : '3:00PM - 4:00PM',
- // 			start  : '2019-06-15',
- // 		}
- // 		]
- // 	});
- // });
+ 		},
+ 		{
+ 			title  : '3:00PM - 4:00PM',
+ 			start  : '2019-06-15',
+ 		}
+ 		]
+ 	});
+ });
 
 // second opinion page js
 
@@ -45,7 +46,7 @@ $(document).ready(function(){
 		{
 			breakpoint: 1200,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 4,
 				slidesToScroll: 1,
 			}
 		},
@@ -76,8 +77,49 @@ $(document).ready(function(){
 
 // appoinment booking based on doctor
 
-// $(document).ready(function() {
-//  	$('#calendar1').fullCalendar({
+$(document).ready(function() {
+ 	$('#calendar1').fullCalendar({
 
-//  	});
-//  });
+ 	});
+ });
+
+// landing page slider our customer
+
+$(document).ready(function(){
+	$('.our_customer_slider').slick({
+		dots:false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{	
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 577,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
+	});
+});

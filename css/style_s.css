@@ -6,22 +6,22 @@
 	padding: 120px 0px;
 }
 .banner_details p {
-    line-height: 33px;
-    font-weight: bold;
-    margin: 20px 0px;
+	line-height: 33px;
+	font-weight: bold;
+	margin: 20px 0px;
 }
 .banner_details label {
-    font-size: 24px;
-    font-weight: 700;
+	font-size: 24px;
+	font-weight: 700;
 }
 .banner_details h1 {
-    font-size: 50px;
-    font-weight: bold;
+	font-size: 50px;
+	font-weight: bold;
 }
 .banner_details img {
-    width: 100px;
-    height: auto;
-    margin-top: 30px;
+	width: 100px;
+	height: auto;
+	margin-top: 30px;
 }
 .customer_image_box{
 	border: 1px solid #dddddd;
@@ -29,14 +29,14 @@
 }
 .customer_image_box img{
 	max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: block;
+	max-height: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: block;
 }
 .customer_image_section{
 	padding: 60px 30px;
@@ -65,7 +65,7 @@
 	height: 90px;
 }
 .margin_footer {
-    margin: 10px 50px;
+	margin: 10px 50px;
 }
 .header_bottom{
 	border-top: 5px solid #008cd2;
@@ -77,48 +77,49 @@
 	color: #757575;
 }
 .search_content {
-    background-image: url(../images/search_bg.png);
-    width: 400px;
-    position: fixed;
-    top: 130px;
-    right: -400px;
-    padding: 40px;
-    color: #fff;
-    transition: all 0.5s;
-    z-index: 11;
+	background-image: url(../images/search_bg.png);
+	width: 400px;
+	position: fixed;
+	top: 130px;
+	right: -400px;
+	padding: 40px;
+	color: #fff;
+	transition: all 0.5s;
+	z-index: 11;
 }
 .search_icon_box a {
-    position: absolute;
-    top: 0px;
-    left: -45px;
-    background-color: #225999;
-    padding: 10px;
+	position: absolute;
+	top: 0px;
+	left: -45px;
+	background-color: #225999;
+	padding: 10px;
 }
 .search_content.open_search {
-    right: 0;
+	right: 0;
 }
 .search_button button{
 	margin: 15px 0px 0px;
-    border: none;
-    padding: 7px 47px;
-    color: #fff;
-    background-color: #008cd2;
-    font-weight: 600;
+	border: none;
+	padding: 7px 47px;
+	color: #fff;
+	background-color: #008cd2;
+	font-weight: 600;
 }
 input.search_input {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 9px;
-    margin: 20px 0px 4px;
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 9px;
+	margin: 20px 0px 4px;
 }
 .upload_btn label {
-    width: 100%;
-    background-color: #008cd2;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
+	width: 100%;
+	background-color: #008cd2;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	height: 46px;
 }
 /*Doctor consultation Page css*/
 .specialities{
@@ -141,9 +142,9 @@ input.search_input {
 .specialities_blue{
 	background-image: url(../images/pediatrics-top1.jpg);
 	background-repeat: no-repeat;
+	background-size: contain;
 	padding: 40px 0px;
 	position: relative;
-	border-bottom: 1px solid #dddddd;
 	background-attachment: fixed;
 }
 .specialities_blue:before{
@@ -357,9 +358,11 @@ a.fc-day-grid-event.fc-event {
 	margin: 10px 0px;
 }
 input.form-group {
-	padding: 9px;
-	width: 100%;
-	margin-top: 10px;
+    padding: 9px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 11;
 }
 button.btn.search_btn {
 	border-radius: 0px;
@@ -477,19 +480,19 @@ button.btn.search_btn {
 	padding: 40px 0px;
 }
 a.tab_link {
-    padding: 50px 4px;
-    border: 1px solid;
-    width: 100%;
-    height: 173px;
-    text-align: center;
-    filter: grayscale(100%);
+	padding: 50px 4px;
+	border: 1px solid;
+	width: 100%;
+	height: 173px;
+	text-align: center;
+	filter: grayscale(100%);
 }
 a.tab_link.active {
 	color: #1c5a9a;
-    filter: none;
+	filter: none;
 }
 .form-check {
-    padding: 0!important;
+	padding: 0!important;
 }
 .family_doctor input[type=checkbox], input[type=radio]{
 	display: none;
@@ -526,7 +529,7 @@ input[type=radio] + label{
 
 /*Physiotherapy detail list page css start*/
 .details_des_section {
-    padding: 0px 0px 40px;
+	padding: 0px 0px 40px;
 }
 .details_des_section ul{
 	padding: 0px 18px;
@@ -542,11 +545,8 @@ input[type=radio] + label{
 }
 .details a.tab_link {
 	padding: 38px 0px!important;
-    height: 148px!important;
+	height: 148px!important;
 } 
-.border-bottom{
-	border-right: 1px solid #dddddd;
-}
 .text_center{
 	margin: 0px auto;
 }
@@ -559,10 +559,10 @@ input[type=radio] + label{
 	color: #0c4e93;
 }
 .blue_font{
-		color: #008cd2;
+	color: #008cd2;
 }
 p.pain_management_list{
-height: 150px;
+	height: 150px;
 	border: 1px solid #a0a0a0;
 	color: white;
 	margin-top: 30px;
@@ -571,21 +571,21 @@ height: 150px;
 	background-color: #fff;
 }
 .pain_mangement_main {
-    border-bottom: 1px solid #dddddd;
-    padding-bottom: 40px;
-    margin-bottom: 34px;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 40px;
+	margin-bottom: 34px;
 }
 .pain_mangement_right{
 	border-left: 1px solid #dddddd;
 	padding-left: 20px;
 }
 .pain_mangement_btn button {
-    border: 2px solid #0c4e93;
-    color: #0c4e93;
-    padding: 10px 29px;
-    font-weight: 700;
-    background-color: transparent;
-    text-transform: uppercase;
+	border: 2px solid #0c4e93;
+	color: #0c4e93;
+	padding: 10px 29px;
+	font-weight: 700;
+	background-color: transparent;
+	text-transform: uppercase;
 }
 
 /*medicine supply*/
@@ -604,8 +604,8 @@ height: 150px;
 	padding: 40px;
 }
 .baby_care_border {
-    border-bottom: 1px solid #dddddd;
-    padding: 9px 0px 36px;
+	border-bottom: 1px solid #dddddd;
+	padding: 9px 0px 36px;
 }
 .baby_care{
 	background-color: #fff;
@@ -629,18 +629,18 @@ height: 150px;
 	padding: 40px 0px;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #000000!important;
-    border-bottom: 4px solid #0c4e93!important;
+	color: #000000!important;
+	border-bottom: 4px solid #0c4e93!important;
 }
 .nav-tabs .nav-link {
-     border: none!important;
-     text-transform: uppercase;
-     color: #999999!important;
+	border: none!important;
+	text-transform: uppercase;
+	color: #999999!important;
 }
 .physiotherapy_tab ul {
-    display: table;
-    width: 100%;
-    text-align: center;
+	display: table;
+	width: 100%;
+	text-align: center;
 }
 .physiotherapy_tab ul li{
 	display: inline-block;
@@ -678,26 +678,26 @@ height: 150px;
 }
 /*doctor login page css start*/
 .doctor_login_box {
-    border: 1px solid #dddddd;
-    padding: 30px;
-    margin: 100px auto;
-    width: 100%;
-    max-width: 500px;
-    display: table;
+	border: 1px solid #dddddd;
+	padding: 30px;
+	margin: 100px auto;
+	width: 100%;
+	max-width: 500px;
+	display: table;
 }
 .doctor_login_box button {
-    width: 100%;
-    margin: 22px 0px 0px;
-    border: none;
-    padding: 8px 0px;
-    color: #fff;
-    background-color: #008cd2;
-    font-weight: 600;
+	width: 100%;
+	margin: 22px 0px 0px;
+	border: none;
+	padding: 8px 0px;
+	color: #fff;
+	background-color: #008cd2;
+	font-weight: 600;
 }
 .doctor_login_box h3 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 .doctor_login_box p{
 	margin: 10px 0px;
@@ -705,31 +705,32 @@ height: 150px;
 }
 /*register patient page css*/
 .btn-group{
-    width: 100%;
+	width: 100%;
+	height: 48px;
 }
 .btn-group button{
 	border: 1px solid #dddddd;
 }
 .register_box {
-    border: 1px solid #dddddd;
-    padding: 30px;
-    margin: 100px auto;
-    width: 100%;
-    max-width: 900px;
-    display: table;
+	border: 1px solid #dddddd;
+	padding: 30px;
+	margin: 100px auto;
+	width: 100%;
+	max-width: 900px;
+	display: table;
 }
 .register_box button {
-    margin: 15px 0px 0px;
-    border: none;
-    padding: 7px 47px;
-    color: #fff;
-    background-color: #008cd2;
-    font-weight: 600;
+	margin: 15px 0px 0px;
+	border: none;
+	padding: 7px 47px;
+	color: #fff;
+	background-color: #008cd2;
+	font-weight: 600;
 }
 .register_box h3 {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 .register_box label{
 	margin: 10px 0px;
@@ -746,32 +747,30 @@ height: 150px;
 	border: 1px solid #dddddd;
 }
 .input-group-text {
-     background-color: transparent!important; 
-     border-radius: 0px!important; 
+	background-color: transparent!important; 
+	border-radius: 0px!important; 
 }
 .upload_btn button{
 	width: 100%;
-    border: none;
-    padding: 8px 0px;
-    color: #fff;
-    background-color: #008cd2;
+	border: none;
+	padding: 8px 0px;
+	color: #fff;
+	background-color: #008cd2;
 }
 /*appointment booking after login page css*/
 .book_appointment{
 	padding: 40px 0px;
-}
-.book_appointment label{
-	margin: 10px 0px 3px;
 }
 .book_appointment select {
 	width: 100%;
 	padding: 10px;
 }
 .btn-group-toggle>.btn{
-    margin-top: 0!important;
+	margin-top: 0!important;
 }
 .book_appointment label.btn-light {
-    border: 1px solid #dddddd;
+	border: 1px solid #dddddd;
+	padding: 11px
 }
 /*e-prescription page css start*/
 .doctor_prescription{
@@ -780,22 +779,22 @@ height: 150px;
 	margin: 40px 0px;
 }
 .quali {
-    text-align: right;
+	text-align: right;
 }
 .index_medicine {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .index_medicine hr {
-    display: inline-block;
-    width: calc(100% - 20px);
-    text-align: center;
+	display: inline-block;
+	width: calc(100% - 20px);
+	text-align: center;
 }
 .index_medicine span {
-    display: inline-flex;
+	display: inline-flex;
 }
 .index_medicine span.medicine_name {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 .index_medicine span.line{
 	width: 100%;
@@ -818,15 +817,15 @@ height: 150px;
 	left: 0;
 	bottom: 0;
 	display: block;
- }
- .lab_detail{
- 	margin: 60px 0px;
- }
- /*appoinment booking based on doctor*/
- .appointment_calendar_1{
- 	padding: 40px 0px;
- }
- .select_date_appoinment input[type=radio]:checked + label{
+}
+.lab_detail{
+	margin: 60px 0px;
+}
+/*appoinment booking based on doctor*/
+.appointment_calendar_1{
+	padding: 40px 0px;
+}
+.select_date_appoinment input[type=radio]:checked + label{
 	border: 1px solid #0c4e93;
 	color: #0c4e93;
 }
@@ -846,38 +845,80 @@ height: 150px;
 .tc_apply{
 	padding: 40px;
 }
- /*appoinment booking based on hospital*/
- .book_ur_appoinment{
- 	padding: 20px 0px;
- 	border-bottom: 1px solid #dddddd;
- }
+/*appoinment booking based on hospital*/
+.book_ur_appoinment{
+	padding: 20px 0px;
+	border-bottom: 1px solid #dddddd;
+}
 .book_ur_appoinment select {
 	width: 100%;
 	padding: 10px;
 	margin: 10px 0px;
 }
 .tc_apply input + label {
-    padding-left: 40px;
-    position: relative;
+	padding-left: 40px;
+	position: relative;
 }
 .tc_apply input + label:before {
-    content: "";
-    background-image: url(../images/check.png);
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-position: -50px 0px;
+	content: "";
+	background-image: url(../images/check.png);
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-position: -50px 0px;
 }
 .tc_apply input:checked + label:before{
 	background-position: 0px 0px;
 }
-
+.border-bottom, .border-right{
+	border-color: #c4c4c4 !important;
+}
+.register_box input + label {
+	padding-left: 40px;
+	position: relative;
+}
+.register_box input + label:before {
+	content: "";
+	background-image: url(../images/check.png);
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-position: -50px 0px;
+}
+.register_box input:checked + label:before{
+	background-position: 0px 0px;
+}
+.line_before {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.line_before:after {
+    content: "";
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 @media (max-width: 1199px){
-	
+	td.fc-day-number {
+		height: 90px;
+	}
+	.border{
+		border: none!important;
+	}
 }
 @media (max-width: 991px){
 	.doctor_image{
@@ -888,9 +929,6 @@ height: 150px;
 		text-align: center;
 		margin: 10px 18px;
 	}
-	.form-control{
-		margin-bottom: 15px;
-	}
 	.specialities_toggle_menu .col-lg-3.border{
 		border: none!important;
 	}
@@ -898,15 +936,49 @@ height: 150px;
 		float: none;
 		text-align: center!important;
 	}
+	td.fc-day-number {
+		height: 60px;
+	}
+	th.fc-day-header.fc-widget-header{
+		padding: 5px;
+	}
+	.doctor_image img {
+		max-width: none;
+		max-height: none;
+		min-width: fit-content;
+	}
+	.feature_detail_card_blue hr{
+		width: 20%;
+	}
+	.border-bottom, .border-right{
+		border: none!important;
+	}
+	.doctor_name h4{
+		margin-top: 15px;
+	}
+	.border{
+		border: none!important;
+	}
 }
 @media(max-width: 767px){
 	.footer_right {
 		width: 100%;
 	}
+	.feature_detail_card_blue hr{
+		width: 10%;
+	}
 }
 @media (max-width: 575px){
-	.doctor_login_box a{
+	.doctor_login_box a {
 		float: none!important;
 		width: 100%;
+		text-align: center;
+		margin: 5px 0px;
+	}
+	.select_date_appoinment .form-check {
+		width: 100%!important;
+	}
+	.select_date_appoinment input[type=radio] + label {
+		width: 100%; 
 	}
 }
