@@ -11,80 +11,153 @@
 	<link rel="stylesheet" type="text/css" href="css/aos.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive-tabs.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css">
 	<link rel="stylesheet" type="text/css" href="css/style_a.css">
 	<link rel="stylesheet" type="text/css" href="css/style_s.css">
 	<link rel="stylesheet" type="text/css" href="css/style_v.css">
 	<link rel="stylesheet" type="text/css" href="css/style_m.css">
 	<link rel="stylesheet" type="text/css" href="css/style_h.css">
+	<link rel="stylesheet" type="text/css" href="css/style_k.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="icon" href="images/favicon.png">
 </head>
-<body>
+<body style="overflow: hidden;">
+	<div id="loader-wrapper">
+		<div class="heartbeatloader">
+			<svg class="svgdraw" width="100%" height="100%" viewBox="0 0 150 400" xmlns="http://www.w3.org/2000/svg" >
+				<path class="path" d="M 0 200 l 40 0 l 5 -40 l 5 40 l 10 0 l 5 15 l 10 -140 l 10 220 l 5 -95 l 10 0 l 5 20 l 5 -20 l 30 0" fill="transparent" stroke-width="4" stroke="black"/>
+			</svg>
+		</div>
+	</div>
 	<header>
-		<div class="header_top">
-			<div class="custom_container">
+		<div class="header_content">
+			<div class="logo">
+				<a href="index.html"><img src="images/prydeLogo.png" alt="logo_image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="header_menu">
+				<nav class="navbar navbar-expand-xl">
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item mydropdown">
+								<a class="nav-link active dropdown-toggle" data-toggle="dropdown" id="navbardrop_patient" href="javascript:void(0);">Patient</a>
+								<div class="dropdown-menu">
+									<div class="form-row m-0">
+										<div class="col-xl-6 p-0">
+											<a class="dropdown-item" href="doctor_consulatation.html">Doctor Consultation</a>
+											<a class="dropdown-item" href="searchClinic.html">Search Clinic</a>
+											<a class="dropdown-item" href="my_appointment.html">My Appointment</a>
+											<a class="dropdown-item" href="family_doctor.html">Family Doctor</a>
+											<a class="dropdown-item" href="lab_booking_radiology.html">Radiologist - Lab Booking</a>
+											<a class="dropdown-item" href="lab_booking_pathology.html">Pathologist - Lab Booking</a>
+											<a class="dropdown-item" href="physiotherapy.html">Physiotherapy</a>
+											<a class="dropdown-item" href="nursing.html">Nursing</a>
+											<a class="dropdown-item" href="emotional_wellbeing.html">Emotional Wellbeing</a>
+										</div>
+										<div class="col-xl-6 p-0">
+											<a class="dropdown-item" href="secondOpinion.html">Second Opinion</a>
+											<a class="dropdown-item" href="follow_Up_Consultation.html">Follow Up Consultation</a>
+											<a class="dropdown-item" href="medicine_supply.html">Medicine Supply</a>
+											<a class="dropdown-item" href="#">Medical Equipment Supply</a>
+											<a class="dropdown-item" href="#">New Born Baby & Mother Care at Home</a>
+											<a class="dropdown-item" href="#">Smart Ambulance</a>
+											<a class="dropdown-item" href="#">AI Based Patient Summary & Suggestions</a>
+											<a class="dropdown-item" href="#">Online Payment Mechanism</a>
+											<a class="dropdown-item" href="#">eHR at Patient</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop_doctor" href="javascript:void(0);">Doctor</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">OPD Scheduler</a>
+									<a class="dropdown-item" href="#">IPD Scheduler</a>
+									<a class="dropdown-item" href="#">Doctor Calendar</a>
+									<a class="dropdown-item" href="#">Doctor Profile</a>
+									<a class="dropdown-item" href="#">Online Consultation</a>
+									<a class="dropdown-item" href="#">Share Prescription</a>
+									<a class="dropdown-item" href="#">Syncing with Patient Calendar</a>
+									<a class="dropdown-item" href="#">Patient Conversation from OPD to IPD</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop_individual_OPD" href="javascript:void(0);">Individual OPD</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Vitals for Walk-in , Online & Offfline Patient</a>
+									<a class="dropdown-item" href="#">Scan Prescription/Report for Non-registered Patient</a>
+									<a class="dropdown-item" href="#">Booking Slot / Doctor's Appointment</a>
+									<a class="dropdown-item" href="patient_register.html">Patient Registration</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="product_and_services" href="javascript:void(0);">Product & Services</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Smart Discovery</a>
+									<a class="dropdown-item" href="#">Smart OPD</a>
+									<a class="dropdown-item" href="#">Smart IPD</a>
+									<a class="dropdown-item" href="#">Smart Remote Patient</a>
+									<a class="dropdown-item" href="#">Smart Ambulance</a>
+									<a class="dropdown-item" href="#">Smart Health Care</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>   
+						</ul>
+					</div>
+				</nav>
 				<ul class="login_register">
-					<li><a class="text-white" href="#">24x7 Customer Support</a></li>
 					<li class="dropdown">
-						<a class="dropdown-toggle text-white" href="javascript:void(0);" id="navbardrop_register" data-toggle="dropdown">Register For Free</a>
+						<a class="dropdown-toggle" href="javascript:void(0);" id="navbardrop_register" data-toggle="dropdown">Register For Free</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Register As Doctor</a>
-							<a class="dropdown-item" href="#">Register As Patient</a>
+							<a class="dropdown-item" href="doctor_register.html">Register as Doctor</a>
+							<a class="dropdown-item" href="patient_register.html">Register as Patient</a>
 						</div>
 					</li>
-					<li><a class="text-white" href="#">Login</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="javascript:void(0);" id="navbardrop_login" data-toggle="dropdown">Login</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="doctor_login.html">Login as Doctor</a>
+							<a class="dropdown-item" href="patient_login.html">Login as Patient</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="header_bottom">
-			<div class="custom_container">
-				<div class="row">
-					<div class="logo">
-						<a href="index.html"><img src="images/prydeLogo.png" alt="logo_image"></a>
-						<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</button> -->
+		<div class="right_side_search">
+			<div class="side_search_content text-white">
+				<a class="search_control_btn" href="javascript:void(0);">
+					<img src="images/search.png" alt="icon search">
+				</a>
+				<div class="scroll_for_mobile">
+					<h6>Search Anything:</h6>
+					<p>We provide the most full medical services, so every person could have the opportunity</p>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search anything here...">
 					</div>
-					<nav class="navbar navbar-expand-lg">
-						<div class="collapse navbar-collapse" id="collapsibleNavbar">
-							<ul class="navbar-nav justify-content-end">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle active" data-toggle="dropdown" id="navbardrop_patient" href="javascript:void(0);">Patient</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Submenu 1</a>
-										<a class="dropdown-item" href="#">Submenu 2</a>
-										<a class="dropdown-item" href="#">Submenu 3</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop_doctor" href="javascript:void(0);">Doctor</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Submenu 1</a>
-										<a class="dropdown-item" href="#">Submenu 2</a>
-										<a class="dropdown-item" href="#">Submenu 3</a>
-									</div>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop_individual_OPD" href="javascript:void(0);">Individual OPD</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Submenu 1</a>
-										<a class="dropdown-item" href="#">Submenu 2</a>
-										<a class="dropdown-item" href="#">Submenu 3</a>
-									</div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">About Us</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Contact Us</a>
-								</li>   
-							</ul>
-						</div>
-					</nav>
+					<button class="side_search_btn">Search</button>
+					<h6>Opening Hours:</h6>
+					<p>These are our normal opening hours. When we are closed can be found here.</p>
+					<div class="working_days_and_time">
+						<span class="float-left">Monday - Saturday</span>
+						<span class="float-right">8.30 – 17.00</span>
+					</div>
+					<hr>
+					<div class="working_days_and_time">
+						<span class="float-left">Sunday</span>
+						<span class="float-right">Closed</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -325,93 +398,74 @@
 	</div>
 </section>
 
-<footer>
-	<div class="footer_left">
-		<div class="footer_contact_info">
-			<div class="logo">
-				<img src="images/prydeLogo.png" alt="logo_image">
+	<footer>
+		<div class="footer_left">
+			<div class="footer_contact_info">
+				<div class="logo">
+					<img src="images/prydeLogo.png" alt="logo_image">
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				</p>
 			</div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-			</p>
-			<span><img src="images/location.png" alt="icon image">Address: - Ahmedabad, India</span>
-			<span><img src="images/call.png" alt="icon image">Call us: - <a href="tel:+919988765432">+91 99 88 765 432</a></span>
-			<span><img src="images/email.png" alt="icon image">Email: - <a href="mailto:dummy@example.com">dummy@example.com</a></span>
 		</div>
-	</div>
-	<div class="footer_right">
-		<div class="footer_top">
-			<div class="row">
-				<div class="col-xl-8">
-					<h6>Patient</h6>
-					<div class="row">
-						<div class="col-6">
-							<ul>
-								<li><a href="#">Doctor Consultation</a></li>
-								<li><a href="#">Search Clinic</a></li>
-								<li><a href="#">My Appointment</a></li>
-								<li><a href="#">Family Doctor</a></li>
-								<li><a href="#">Radiologist - Lab Booking</a></li>
-								<li><a href="#">Pathologist - Lab Booking</a></li>
-								<li><a href="#">Physiotheraphy</a></li>
-								<li><a href="#">Nursing</a></li>
-								<li><a href="#">Emotional Wllbeing</a></li>
-								<li><a href="#">Second Openion</a></li>
-							</ul>
+		<div class="footer_right">
+			<div class="footer_top">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="footer_contact_details">
+							<img src="images/location.png" alt="icon image">
+							<h5 class="text-white">Address:</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 						</div>
-						<div class="col-6">
-							<ul>
-								<li><a href="#">Follow Up Consultation</a></li>
-								<li><a href="#">Medicine Supply</a></li>
-								<li><a href="#">Medical Equipment Supply</a></li>
-								<li><a href="#">New Born Baby & Mother Care at Home</a></li>
-								<li><a href="#">Smart Ambulance</a></li>
-								<li><a href="#">AI Based Patient Summary & Suggestions</a></li>
-								<li><a href="#">Online Payment Mechanism</a></li>
-								<li><a href="#">eHR at Patient</a></li>
-							</ul>
+					</div>
+					<div class="col-lg-4 col-sm-6 pt-3 pt-lg-0">
+						<div class="footer_contact_details">
+							<img src="images/call.png" alt="icon image">
+							<h5 class="text-white">Call us:</h5>
+							<a href="tel:+919988765432">+91 99 88 765 432</a>
+							<a href="tel:+919988765431">+91 99 88 765 431</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 pt-3 pt-lg-0">
+						<div class="footer_contact_details">
+							<img src="images/email.png" alt="icon image">
+							<h5 class="text-white">Email:</h5>
+							<a href="mailto:dummy@example.com">dummy@example.com</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4">
-					<h6>Doctor</h6>
-					<ul>
-						<li><a href="#">OPD scheduler</a></li>
-						<li><a href="#">IPD scheduler</a></li>
-						<li><a href="#">Doctor Calendar</a></li>
-						<li><a href="#">Doctor Profile</a></li>
-						<li><a href="#">Online Consultation</a></li>
-						<li><a href="#">Share Prescription</a></li>
-						<li><a href="#">Syncing with Patient Calendar</a></li>
-						<li><a href="#">Patient conversation from OPD to IPD</a></li>
-					</ul>
-				</div>
+			</div>
+			<div class="footer_bottom">
+				<ul class="copyright_text">
+					<li><p>Copyright © 2019.</p></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Career</a></li>
+				</ul>
+				<ul class="social_media_links">
+					<li><a href="#"><img src="images/facebook.png" alt="social icon"></a></li>
+					<li><a href="#"><img src="images/twitter.png" alt="social icon"></a></li>
+					<li><a href="#"><img src="images/linked_in.png" alt="social icon"></a></li>
+					<li><a href="#"><img src="images/google_plus.png" alt="social icon"></a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="footer_bottom">
-			<ul class="copyright_text">
-				<li><p>Copyright © 2019.</p></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Terms & Conditions</a></li>
-				<li><a href="#">Career</a></li>
-			</ul>
-			<ul class="social_media_links">
-				<li><a href="#"><img src="images/facebook.png" alt="social icon"></a></li>
-				<li><a href="#"><img src="images/twitter.png" alt="social icon"></a></li>
-				<li><a href="#"><img src="images/linked_in.png" alt="social icon"></a></li>
-				<li><a href="#"><img src="images/google_plus.png" alt="social icon"></a></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/aos.js"></script>
-<script type="text/javascript" src="js/jquery.responsiveTabs.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+		<a class="back_to_top" href="javascript:void(0);">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</a>
+	</footer>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<script type="text/javascript" src="js/jquery.responsiveTabs.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>
+	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>
+	<script src='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html> 	
